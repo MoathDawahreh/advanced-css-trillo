@@ -15,15 +15,18 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 html {
-  font-size: 62.5%;
-  box-sizing: border-box; }
+  font-size: 62.5%; // 1 rem=10px
+  box-sizing: border-box;
+}
