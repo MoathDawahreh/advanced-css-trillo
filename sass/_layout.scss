@@ -1,0 +1,19 @@
+.container {
+	max-width: 120rem;
+	margin: 8rem auto; // to center the container inside its parent -the body in this case- / 8rem for top and bottom - auto for left and right
+	background-color: var(--color-grey-light-2);
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+	min-height: 50rem;
+}
+
+.header {
+}
+
+.content {
+}
+
+.sidebar {
+}
+
+.hotel-view {
+}

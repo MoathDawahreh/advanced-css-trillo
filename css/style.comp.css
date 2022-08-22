@@ -41,7 +41,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
@@ -49,10 +49,3 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }
-
-.container {
-  max-width: 120rem;
-  margin: 8rem auto;
-  background-color: var(--color-grey-light-2);
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
-  min-height: 50rem; }
