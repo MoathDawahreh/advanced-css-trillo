@@ -2,18 +2,26 @@
 	max-width: 120rem;
 	margin: 8rem auto; // to center the container inside its parent -the body in this case- / 8rem for top and bottom - auto for left and right
 	background-color: var(--color-grey-light-2);
-	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+	box-shadow: var(--shadow-dark);
 	min-height: 50rem;
 }
 
 .header {
+	height: 7rem;
+	background-color: #fff;
+	border-bottom: var(--color-grey-light-1);
 }
 
 .content {
+	display: flex;
 }
 
 .sidebar {
+	background-color: var(--color-grey-dark-1);
+	flex: 0 0 18%; // first zero is for grow, the second is for shrik and we always want it 18% no shirk and no grow
 }
 
 .hotel-view {
+	background-color: yellowgreen;
+	flex: 1; // the element should grow to fit
 }
