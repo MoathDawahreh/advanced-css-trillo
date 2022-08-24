@@ -8,12 +8,12 @@
   //   background-color: antiquewhite;
 
   // search is flex item of the header & by displing flex below this item will become also a flex container - search is flex item of header and cntainer for input and button and so on-
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // instead of above we can do this:
 
-  display: inline-flex;
+  //   display: inline-flex;
 
   &__input {
     font-family: inherit; // input & font size does not inhirit the font family of the global document so we have to do it manually
@@ -65,19 +65,53 @@
 }
 
 .user-nav {
+  align-self: stretch; // this makes this item only streatch for all the space around -display background color to see what it does-
+
+  display: flex;
+  align-items: center;
+
+  & > * {
+    // all the direct childerns for user-nav
+    padding: 0 2rem; // 0 top and 2 left + right
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    // select all the childrens again but on hover
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
+    position: relative;
   }
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-grey-dark-2);
   }
   &__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__user {
   }
   &__user-photo {
     height: 3.7rem;
-    width: 3.7rem;
+    border-radius: 50%;
   }
   &__user-name {
   }
