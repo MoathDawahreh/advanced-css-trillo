@@ -13,7 +13,7 @@
 	border-bottom: var(--color-grey-light-1);
 
 	display: flex;
-	justify-content: space-between; 
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -24,9 +24,13 @@
 .sidebar {
 	background-color: var(--color-grey-dark-1);
 	flex: 0 0 18%; // first zero is for grow, the second is for shrik and we always want it 18% no shirk and no grow
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .hotel-view {
 	background-color: yellowgreen;
+	height: 90rem;
 	flex: 1; // the element should grow to fit
 }
