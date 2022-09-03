@@ -130,7 +130,7 @@
 		}
 	}
 
-	&__item:before {
+	&__item::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -179,4 +179,42 @@
 	padding: 2.5rem;
 	color: var(--color-grey-light-4);
 	text-align: center;
+}
+
+/// gallery
+
+.gallery {
+	display: flex;
+	&__photo {
+		width: 100%;
+		display: block;
+	}
+}
+
+/// hotel overview
+
+.overview {
+	display: flex;
+	&__heading {
+	}
+	&__stars {
+		margin-right: auto; //margin auto is helpful with flexbox, this item will grow and occupy all the available space
+
+	}
+	&__icon-star,
+	&__icon-location {
+		width: 1.75rem;
+		height: 1.75rem;
+		fill: var(
+			--color-primary
+		); // The fill property is for filling in the color of a SVG shape.
+	}
+	&__location {
+	}
+	&__rating {
+	}
+	&__rating-average {
+	}
+	&__rating-count {
+	}
 }
