@@ -30,8 +30,7 @@
 }
 
 .hotel-view {
-	background-color: #fff;
-  height: 80rem;
+  background-color: #fff;
   flex: 1; // the element should grow to fit
 }
 
@@ -43,7 +42,10 @@
 }
 
 .description {
-  background-color: yellowgreen;
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
   flex: 0 0 60%; //  0 grow, 0 shrik and 60% for the flex basises
   margin-right: 4.5rem;
 }
