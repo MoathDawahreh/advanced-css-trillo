@@ -339,9 +339,14 @@ body {
 .review {
   background-color: #fff;
   box-shadow: var(--shadow-light);
-  padding: 3rem; }
+  padding: 3rem;
+  position: relative;
+  overflow: hidden; }
   .review:not(:last-child) {
     margin-bottom: 3.5rem; }
+  .review__text {
+    z-index: 10;
+    position: relative; }
   .review__user {
     display: flex;
     justify-content: center;
@@ -356,7 +361,18 @@ body {
     margin-right: auto; }
   .review__rating {
     font-size: 2.5rem;
+    font-weight: 300;
     color: var(--color-primary); }
   .review__user--date {
     font-size: 1.3rem;
     color: var(--color-grey-dark-3); }
+  .review::before {
+    content: '\201C';
+    position: absolute;
+    top: -2.5rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    font-family: sans-serif;
+    color: var(--color-grey-light-2);
+    z-index: 5; }
