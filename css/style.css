@@ -99,6 +99,9 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
+  @media screen and (max-width: 56.25em) {
+    .detail {
+      padding: 2.5rem; } }
 
 .description {
   background-color: #fff;
@@ -106,6 +109,10 @@ body {
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem; }
+  @media screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 2.5rem; } }
 
 .user-reviews {
   flex: 1;
@@ -202,6 +209,12 @@ body {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 56.25em) {
+        .side-nav__item:not(:last-child) {
+          margin-bottom: 0; } }
+    @media screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -226,6 +239,10 @@ body {
     z-index: 1;
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 56.25em) {
+      .side-nav__link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
   .side-nav__icon {
     width: 1.7rem;
     height: 1.7rem;
@@ -352,6 +369,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -367,8 +386,14 @@ body {
   padding: 3rem;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 56.25em) {
+    .review {
+      padding: 1.5rem; } }
   .review:not(:last-child) {
     margin-bottom: 3.5rem; }
+    @media screen and (max-width: 56.25em) {
+      .review:not(:last-child) {
+        margin-bottom: 2rem; } }
   .review__text {
     z-index: 10;
     position: relative; }
@@ -403,8 +428,11 @@ body {
     z-index: 5; }
 
 .cta {
-  padding: 3.5em 0;
+  padding: 3.5rem 0;
   text-align: center; }
+  @media screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5 0rem; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;

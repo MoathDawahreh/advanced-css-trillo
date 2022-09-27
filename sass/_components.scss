@@ -131,6 +131,12 @@
 
     &:not(:last-child) {
       margin-bottom: 1rem;
+      @media screen and(max-width:$bp-medium) {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and(max-width:$bp-medium) {
+      flex: 1; // all items will grow as much as they can / since all are having 1 flex it will be equal occupied space
     }
   }
 
@@ -167,6 +173,10 @@
     display: flex;
     align-items: center;
     // justify-content: start;
+    @media screen and(max-width:$bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
   &__icon {
     width: 1.7rem;
@@ -357,6 +367,9 @@
   &__count {
     margin-right: auto;
   }
+  &__friends {
+    display: flex;
+  }
 
   &__photo {
     box-sizing: content-box;
@@ -379,9 +392,14 @@
   padding: 3rem;
   position: relative;
   overflow: hidden;
-
+  @media screen and(max-width:$bp-medium) {
+    padding: 1.5rem;
+  }
   &:not(:last-child) {
     margin-bottom: 3.5rem;
+    @media screen and(max-width:$bp-medium) {
+      margin-bottom: 2rem;
+    }
   }
   &__text {
     z-index: 10;
@@ -428,9 +446,11 @@
 /////////////////// CTA - call to action //////////////////////////////////
 
 .cta {
-  padding: 3.5em 0;
+  padding: 3.5rem 0;
   text-align: center;
-
+  @media screen and(max-width:$bp-medium) {
+    padding: 2.5 0rem;
+  }
   &__book-now {
     font-size: 2rem;
     font-weight: 300;

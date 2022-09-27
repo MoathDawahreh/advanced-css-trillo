@@ -50,6 +50,9 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+  @media screen and(max-width:$bp-medium) {
+    padding: 2.5rem;
+  }
 }
 
 .description {
@@ -58,6 +61,10 @@
   padding: 3rem;
   flex: 0 0 60%; //  0 grow, 0 shrik and 60% for the flex basises
   margin-right: 4.5rem;
+  @media screen and(max-width:$bp-medium) {
+    padding: 2rem;
+    margin-right: 2.5rem;
+  }
 }
 .user-reviews {
   flex: 1; // this means ocuupy the remaning space
