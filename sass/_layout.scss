@@ -1,57 +1,67 @@
 .container {
-	max-width: 120rem;
-	margin: 8rem auto; // to center the container inside its parent -the body in this case- / 8rem for top and bottom - auto for left and right
-	background-color: var(--color-grey-light-1);
-	box-shadow: var(--shadow-dark);
-	min-height: 50rem;
+  max-width: 120rem;
+  margin: 8rem auto; // to center the container inside its parent -the body in this case- / 8rem for top and bottom - auto for left and right
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+
+  @media only screen and(max-width:$bp-largest) {
+    margin: 0;
+    // width: 100%;
+    max-width: 100%;
+  }
 }
 
 .header {
-	font-size: 1.4rem;
-	height: 7rem;
-	background-color: #fff;
-	border-bottom: var(--line);
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
-	display: flex;
+  display: flex;
+
+  @media only screen and(max-width:$bp-medium) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
-	background-color: var(--color-grey-dark-1);
-	flex: 0 0 18%; // first zero is for grow, the second is for shrik and we always want it 18% no shirk and no grow
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; // first zero is for grow, the second is for shrik and we always want it 18% no shirk and no grow
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
-	background-color: #fff;
-	flex: 1; // the element should grow to fit
+  background-color: #fff;
+  flex: 1; // the element should grow to fit
 }
 
 .detail {
-	font-size: 1.4rem;
-	display: flex;
-	padding: 4.5rem;
-	background-color: var(--color-grey-light-1);
-	border-bottom: var(--line);
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
 }
 
 .description {
-	background-color: #fff;
-	box-shadow: var(--shadow-light);
-	padding: 3rem;
-	flex: 0 0 60%; //  0 grow, 0 shrik and 60% for the flex basises
-	margin-right: 4.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%; //  0 grow, 0 shrik and 60% for the flex basises
+  margin-right: 4.5rem;
 }
 .user-reviews {
-	flex: 1; // this means ocuupy the remaning space
-	display: flex;
-	flex-direction: column;
-	align-items: center; // defualt alighn is stretch and with it the button will take the whole row
+  flex: 1; // this means ocuupy the remaning space
+  display: flex;
+  flex-direction: column;
+  align-items: center; // defualt alighn is stretch and with it the button will take the whole row
 }
