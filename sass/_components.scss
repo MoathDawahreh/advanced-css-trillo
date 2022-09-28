@@ -15,6 +15,11 @@
 
   //   display: inline-flex;
 
+  @media only screen and(max-width:$bp-smallest) {
+    order: 1; // make it the last element
+    flex: 0 0 100%; // zero shrink and grow and 100% basis -full grow -
+    background-color: var(--color-grey-light-2);
+  }
   &__input {
     font-family: inherit; // in input the properites will not be inherited from the global document so we have to do it manually
     font-size: inherit;
