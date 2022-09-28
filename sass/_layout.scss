@@ -53,6 +53,9 @@
   @media screen and(max-width:$bp-medium) {
     padding: 2.5rem;
   }
+  @media screen and(max-width:$bp-small) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -64,6 +67,10 @@
   @media screen and(max-width:$bp-medium) {
     padding: 2rem;
     margin-right: 2.5rem;
+  }
+  @media screen and(max-width:$bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 .user-reviews {
